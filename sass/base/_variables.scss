@@ -1,0 +1,95 @@
+/*
+    Variables
+    ----------------------------
+*/
+
+//generic
+$body-font : 'Lato','Raleway', 'Helvetica Neue', 'helvetica', Arial, Verdana, sans-serif; 
+
+//colors
+$main-grey: #cfcfcf;
+
+//media-queries
+$mq-xlg: 1338px;
+$mq-lg : 1199px;
+$mq-md : 991px;
+$mq-sm : 767px;
+$mq-sms: 628px; 
+$mq-xs : 519px;
+$mq-xxs: 433px;
+
+//ro margins bottom
+.ro-mb-10{margin-bottom: 10px;}
+.ro-mb-20{margin-bottom: 20px;}
+.ro-mb-30{margin-bottom: 30px;}
+.ro-mb-40{margin-bottom: 40px;}
+.ro-mb-50{margin-bottom: 50px;}
+.ro-mb-60{margin-bottom: 60px;}
+.ro-mb-70{margin-bottom: 70px;}
+
+
+//klasa dolnego podkreślnika
+.after-down-border{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 1px;
+    background: linear-gradient(to right, rgb(111, 134, 214) 20%, rgb(72, 198, 239) 80%);
+}
+
+
+//buttony
+    .btn-sds {
+        background-color: transparent;
+        // color: white;
+        border-radius: 30px;
+        // border: 1px solid white;
+        margin-top: 40px;
+        font-size: 16px;
+        padding: 12px 35x;
+        outline: transparent;
+        // @include animate( color, 320ms );
+
+        @media( max-width: $mq-xlg ){
+            margin-top: 25px;
+        }
+
+        @media( max-width: $mq-lg ){
+            padding: 12px 30px;
+            margin-top: 20px;
+        }
+
+        @media( max-width: $mq-md ){
+            padding: 10px 18px;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        @media( max-width: $mq-sm ){
+            padding: 5px 10px;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        @media( max-width: $mq-sms ){
+            padding: 4px 8px;
+            margin-top: 8px;
+            font-size: 11px;
+        }
+
+        @media( max-width: $mq-xs ){
+            padding: 3px 8px;
+            margin-top: 0px;
+            font-size: 10px;
+        }
+
+        &:hover,
+        &:focus {
+            background: linear-gradient(to right, #6f86d6 20%, #48c6ef 80%);
+            // @include animate( color, 320ms );
+            outline: transparent;
+        }
+    }
+

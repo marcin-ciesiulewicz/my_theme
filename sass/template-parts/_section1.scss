@@ -1,0 +1,48 @@
+.about-sds {
+    padding: 50px 0;
+    background: #f0f0f0;
+
+    .subtitle-sds { padding: 0 120px; }
+
+    .row {
+        margin: 0px;
+
+        div {
+            height: 500px;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .box-sds {
+            height: 100%;
+            padding: 60px 60px 0 60px;
+
+            &.black-sds {
+                background: #2d3745;
+                color: white;
+            }
+
+            &.white-sds {
+                background: #ffffff;
+                color: #2d3745;
+            }
+
+            h1 {
+                font-size: 42px;
+                margin-bottom: 30px;
+            }
+
+        }
+
+        .box-pic-sds {
+            background-size: cover;
+            height: 100%;
+            @include animate( all, 320ms);
+
+            &:hover {
+                @include transform( scale(1.1) );
+            }
+        }
+
+    }
+}

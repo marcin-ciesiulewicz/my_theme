@@ -1,0 +1,52 @@
+/*
+    Header
+    ----------------------------
+*/
+
+header { 
+    // background-color: transparent;
+    // padding: 13px 0;
+    // position: absolute;
+    // left: 0;
+    // right: 0;
+    // top: 0;
+    // z-index: 9;
+    display: block;
+
+    .logo-img{ 
+        padding: 0;
+        
+        @media( max-width: $mq-md ) {
+            float: none;
+        }
+
+        @media( max-width: $mq-sm ) {
+            float: left;
+        }
+
+        img {
+            height: 60px;
+            margin-top: -20px;
+        }
+
+        &.img-active {
+            img {
+                height: 42px;
+                margin-top: 0px;
+            }
+        }
+    }
+
+    .ro-center {
+        @media( max-width:$mq-md ){
+            width: 100%;
+            text-align: center;
+        }
+
+        @media( max-width:$mq-sm ) {
+            width: initial;
+            text-align: initial;
+        }
+    }
+
+}

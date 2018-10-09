@@ -1,0 +1,19 @@
+/*
+    Mixins
+    ----------------------------
+*/
+@mixin animate ( $attr, $time ) {
+    -webkit-transition: $attr , $time ease-in;
+    -moz-transition: $attr , $time ease-in;
+    -ms-transition: $attr , $time ease-in;
+    -o-transition: $attr , $time ease-in;
+    transition: $attr , $time ease-in;
+}
+
+@mixin transform ( $val ) {
+    -webkit-transition: $val;
+    -moz-transition: $val;
+    -ms-transition: $val;
+    -o-transition: $val;
+    transform: $val;
+}
